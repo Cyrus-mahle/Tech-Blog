@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        } 
+        body{
+            width: 90%;
+            background-color: white;
+            margin: 15px auto;
+            box-shadow: 0 0 15px black;
+        }
+        h1,h2,h3{
+            padding: 1em;
+        }
+        h4{
+            text-align: center;
+        }
+        p{
+            padding-left: 1em;
+        }
+        header{
+            box-shadow: 0 0 15px transparent;  
+        }
+        main{
+            height: 350px;
+            width: 66%;
+            float: left;
+            box-shadow: 0 0 10px black;
+            background-color: rgb(245, 241, 245);
+            margin-left: 1%; 
+        }
+        .list{
+            padding-left: 2em;
+        }
+        aside{
+            width: 360px;
+            height: 350px;
+            float: right;
+            background-color: white;
+            color: black;
+            margin-right: 1%;
+            box-shadow: 0 0 15px black;
+            display: block;
+            align-self: stretch;
+        }
+        .aside .wrapper {
+    background: var(--background-primary);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.05);
+  }
+        .contact { margin-bottom: 3rem; }
+
+        .contact p {
+         color: var(--foreground-secondary);
+         margin-bottom: 1rem;
+        }
+        .social-link {
+            list-style-type: none;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    gap: 10px;
+  }
+
+  .social-link .icon-box {
+    width:  45px;
+    height: 45px;
+    background: var(--action-secondary);
+    border-radius: 50%;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    font-size: 22px;
+  }
+
+  .social-link .discord { color: hsl(235, 86%, 65%); }
+
+  .social-link .twitter { color: hsl(203, 89%, 53%); }
+
+  .social-link .facebook { color: hsl(220, 46%, 48%); }
+  
+  .social-link .icon-box:hover {
+    background: var(--accent);
+    color: var(--white);
+  }
+        footer{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>
+        <u>Object Oriented Programming</u>
+        </h2>
+        <p>
+        <b>Object Oriented Programming (OOP)</b> is Programming methodology that is based on real world approach,<br>
+        This approach allows us to view problems we want to solve in object perspective, <b>Object</b> is an instance of <b>class</b>,
+        it has properties or characteristics and functionalies or behaviors that is why it is based on world entity, 
+        While <b>class</b> is a user-defined data type which is a collection of objects.
+        <br><br>
+        </p>
+    </header>
+    <main>
+        <p> 
+        OOP is a technique for writing, clean, organized and mantainable programs using the 4 features of OOP.<br>
+        <b>4 features of OOP are as follows: </b>
+        <div class="list">
+           <ul>
+            <li>
+                <b>Encapsulation</b> Refers to the binding of properties(variables) and functionalies(functions or methods) into a single unit
+                this also allows data hiding by declaring variables <b>private</b> and functions <b>public</b>.
+            </li>
+            <li>
+                <b>Abstraction</b> Refers to process of hiding how things works showing how to use them, providing a clear separation between the external 
+                usage of an object and its internal implementation.
+
+            </li>
+            <li>
+                <b>Polymorphism</b>: Polymorphism is a feature whereby an object has many forms, A real-life example of polymorphism, a lecturer at the same
+                time is a mother, a wife, a woman. <b>Poly</b> means many while <b>morphism</b> means form
+
+            </li>
+            <li>
+                <b>Inheritance</b> is a mechanism in object-oriented programming where a new class (child or subclass 
+                or derived class) is created based on an existing class (parent or superclass or base class), 
+                inheriting its attributes and behaviors. This models an "is-a" relationship, where the subclass is a 
+                specialized version of the superclass, <b>Is-a-relationship</b><br>
+                <b>Composition</b> One or more members of a class are objects of another class for example every car has engine 
+                regardless of its type of engine and every vehicle has wheels regardless of number of wheels, <b>Has-a-relationship</b>                
+            </li>
+           </ul>
+        </div>
+        </p>
+        <p>
+            <br>
+        Its not necessary to use OOP all the time when you solve problems,
+        some problems may be solved perfectly with the <b> structured design </b> approach, for example 
+        if the problem requires manipulating of sets of numbers with mathematical equations and functions, 
+        this can be solved using <b>structured design</b>.<br>
+        While problems such as billing system for a hospital may require <b>OOP</b>.
+        </p>
+    </main>
+    <aside>
+      
+        <div class="contact">
+
+            <h2 class="h2">Let's Talk</h2>
+
+            <div class="wrapper">
+
+              <p>
+                Do you want to learn more about OOP in Java or C++ ? Let us have a
+                conversation.
+              </p>
+
+              <ul class="social-link">
+
+                <li>
+                  <a href="#" class="icon-box discord">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+    </aside>
+    <footer>
+    <br>
+    <h4>&copy; copyright 2024 Nyakama Mahle, all rights reserved</h4>
+    <br>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
